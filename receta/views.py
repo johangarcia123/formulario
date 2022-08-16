@@ -13,7 +13,7 @@ def receta(request):
         "receta": receta[::-1],
         "update_from": None
     }
-    return render(request, 'receta.html', context)
+    return render(request, 'addreceta.html', context)
 
 
 def insert(request):
@@ -52,7 +52,7 @@ def update_from(request, receta_id):
         "receta": receta[::-1],
         "update": receta_only
     }
-    return render(request, 'receta.html', context)
+    return render(request, 'addreceta.html', context)
 
 
 def delete_receta(request, receta_id):
